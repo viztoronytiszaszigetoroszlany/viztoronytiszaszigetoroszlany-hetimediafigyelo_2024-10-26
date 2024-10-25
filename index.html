@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Víztorony - Tisza Sziget - Oroszlány - Heti Médiafigyelő</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1E2F4C; /* A fejléc háttérszíne */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0; /* Kicsit megnövelt padding a fejléc számára */
+        }
+        .header-image {
+            width: 100%;
+            max-width: 960px;
+            height: 365px;
+            object-fit: cover; /* A kép arányainak megőrzése */
+        }
+        h1 {
+            font-size: 36px; /* Nagyobb betűméret */
+            font-family: 'Arial Black', sans-serif; /* Vastagabb betűtípus */
+            margin: 10px 0;
+            background-color: #081C3F; /* A h1 háttérszíne */
+            color: #fff; /* A h1 szöveg színe */
+            padding: 15px 0; /* Padding a h1 számára */
+            text-align: center; /* Középre igazított szöveg */
+        }
+        h2 {
+            color: #fff; /* Cikkek és videók címének színe */
+            margin: 10px 0; /* Margó a h2 címek körül */
+            padding: 10px; /* Padding a h2 számára */
+            background-color: #081C3F; /* Szekció címének háttérszíne */
+            font-size: 28px; /* Nagyobb betűméret */
+            border-radius: 5px; /* Kerekített sarkok */
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            padding: 20px;
+            margin-bottom: 20px; /* Szekciók közötti távolság */
+            border-radius: 8px; /* Kerekített sarkok */
+        }
+        .weekly-highlight {
+            background-color: #e7f3ff; /* Külön háttérszín a heti ajánlónak */
+            padding: 15px; /* Padding a heti ajánló szövegének */
+            font-weight: bold; /* Vastag betűtípus */
+            font-size: 20px; /* Nagyobb betűméret */
+            border-radius: 5px; /* Kerekített sarkok */
+            margin: 15px 0; /* Margó a heti ajánló körül */
+        }
+        .article, .video {
+            margin-bottom: 20px;
+            display: flex; /* Flexbox elrendezés */
+        }
+        .article img {
+            max-width: 200px; /* Kép szélessége */
+			max-height: 150px;
+            height: auto;
+			margin-top: 30px;
+            margin-right: 15px; /* Kép és szöveg közötti távolság */
+        }
+        .article p {
+            margin: 10px 0;
+        }
+        .article h3 a {
+            color: #1E2F4C; /* H3 linkek színe (sötétebb kék) */
+            text-decoration: none; /* Link aláhúzás eltávolítása */
+            font-weight: bold; /* Vastag link szöveg */
+            margin-top: 5px; /* Felső margó a linkeknek */
+            display: inline-block; /* Linkek blokk elemként való megjelenítése */
+        }
+        .article h3 a:hover {
+            color: #0A4B7D; /* Link színének sötétebb árnyalata hover esetén */
+            text-decoration: none; /* Aláhúzás eltávolítása hover esetén */
+        }
+        .article a {
+            color: #FF6F20; /* "Olvasd el a teljes cikket itt!" link színe (narancs) */
+            text-decoration: none; /* Link aláhúzás eltávolítása */
+            font-weight: bold; /* Vastag link szöveg */
+            margin-top: 5px; /* Felső margó a linkeknek */
+            display: inline-block; /* Linkek blokk elemként való megjelenítése */
+        }
+        .article a:hover {
+            text-decoration: underline; /* Hover effektus */
+            color: #FF4500; /* Link színének sötétebb narancs színre változtatása hover esetén */
+        }
+        .video iframe {
+            width: 100%;
+            height: 315px;
+        }
+        .video h3 {
+            margin: 10px 0; /* Videó címének margója */
+            color: #FF6F20; /* Videó címének színe */
+        }
+        .video p {
+            text-align: center; /* Középre igazított szöveg a videók alatt */
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 10px;
+            }
+            .video iframe {
+                height: 200px;
+            }
+            .article {
+                flex-direction: column; /* Mobil nézethez oszlopos elrendezés */
+            }
+            .article img {
+                margin-right: 0;
+                margin-bottom: 10px; /* Kép és szöveg közötti távolság mobilon */
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1E2F4C; /* A lábléc háttérszíne */
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="viztorony_kep.jpg" alt="Víztorony - Tisza Sziget - Oroszlány" class="header-image">
+        <h1>Heti Médiafigyelő 2024.10.26.</h1>        
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Heti Ajánló</h2>
+            <div class="weekly-highlight">
+                Minden héten szombaton megosztjuk veletek az előző hét szombattól az aktuális hét péntekéig összegyűjtött általunk legérdekesebbnek tartott cikkeket és videókat. Reméljük, hogy hasznosnak találjátok ezeket a forrásokat!
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Ajánlott Cikkek</h2>
+            
+            <div class="article">
+                <img src="https://assets.4cdn.hu/kraken/7OYdiZBSmZRPrLZVs-xl.jpeg" alt="Újabb fordulat a Kalocsa-Kecskeméti Főegyházmegyét érintő szexbotrányban: lemondott a püspökkari titkár">
+                <div>
+                    <h3><a href="https://444.hu/2024/10/25/ujabb-fordulat-a-kalocsa-kecskemeti-foegyhazmegyet-erinto-szexbotranyban-lemondott-a-puspokkari-titkar" target="_blank">Újabb fordulat a Kalocsa-Kecskeméti Főegyházmegyét érintő szexbotrányban: lemondott a püspökkari titkár</a></h3>
+                    <p>A Kalocsa-Kecskeméti Főegyházmegyét érintő szexbotrányban Tóth Tamás püspökkari titkár váratlanul lemondott, miután értesültek róla, hogy egy plébános homoszexuális szolgáltatásokért fizetett. Tóth, aki korábban is részt vett kétes ügyek rendezésében, a Magyar Katolikus Püspöki Konferencia elnökének jelezte lemondását. A történtek az egyházban komoly visszhangot váltottak ki.</p>
+                    <a href="https://444.hu/2024/10/25/ujabb-fordulat-a-kalocsa-kecskemeti-foegyhazmegyet-erinto-szexbotranyban-lemondott-a-puspokkari-titkar" target="_blank">Olvasd el a teljes cikket itt!</a>
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="https://assets.4cdn.hu/kraken/7yejd4mMutPLchPos-xl.jpeg" alt="Lázár János újabb 40 állami kastélytól szabadulna meg">
+                <div>
+                    <h3><a href="https://444.hu/2024/10/25/lazar-janos-ujabb-40-allami-kastelytol-szabadulna-meg" target="_blank">Lázár János újabb 40 állami kastélytól szabadulna meg</a></h3>
+                    <p>Lázár János építési és közlekedési miniszter bejelentette, hogy további negyven kastély kerülhet privatizációra januártól, mivel ezek fenntartása drága az állam számára. A potenciális vásárlók között gazdag önkormányzatok és jelentős cégek versenyezhetnek, köztük a Mol és az OTP. A szabadkígyósi Wenckheim-kastély példája kapcsán Lázár hangsúlyozta a megfelelő pénzügyi háttér fontosságát a hosszú távú fenntartáshoz.</p>
+                    <a href="https://444.hu/2024/10/25/lazar-janos-ujabb-40-allami-kastelytol-szabadulna-meg" target="_blank">Olvasd el a teljes cikket itt!</a>
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="https://s.24.hu/app/uploads/2024/10/central-0925695266-masolat-1140x641.jpg" alt="Mi igaz abból, amit Orbán október 23-án az ukrajnai győzelmi tervről mondott?">
+                <div>
+                    <h3><a href="https://24.hu/kozelet/2024/10/24/orban-viktor-oktober-23-beszed-ukrajna-gyozelmi-terv-volodimir-zelenszkij/" target="_blank">Mi igaz abból, amit Orbán október 23-án az ukrajnai győzelmi tervről mondott?</a></h3>
+                    <p>Orbán Viktor október 23-i beszédében az ukrajnai háború kapcsán bírálta Volodimir Zelenszkij „győzelmi tervét” és annak európai támogatását, amit Brüsszel tervének nevezett. Hangsúlyozta, hogy szerinte a terv háborús kockázatot jelent Európa számára, bár nem említette, hogy a konfliktust Oroszország indította. Zelenszkij NATO-csatlakozási céljaival kapcsolatban elmondta, hogy több nyugati ország szkeptikus, és ezzel az eszkalációtól tartanak.</p>
+                    <a href="https://24.hu/kozelet/2024/10/24/orban-viktor-oktober-23-beszed-ukrajna-gyozelmi-terv-volodimir-zelenszkij/" target="_blank">Olvasd el a teljes cikket itt!</a>
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="https://hang.hu/data/generated/articles/168/1688/article-168814/Kulturtaj_2024_1023_Puzser_4-3_focuspointscale_w702_fx0_fy0.webp?key=MjI3OTEzOGFlOGQ1Mzg2NGI4MWU5YjhiOTY2ZTMyNDNjNjVlZGUwNmFmM2U2Njc3ZmExZDg2Y2RjYTYxM2VlMA==&v=1729888337" alt="Puzsér Róbert: Orbán Viktor elgyengült, és rájött, hogy hülyékkel van körbevéve – Kultúrtáj">
+                <div>
+                    <h3><a href="https://hang.hu/kulturtaj/puzser-robert-orban-viktor-elgyengult-es-rajott-hogy-hulyekkel-van-korbeveve-kulturtaj-168814" target="_blank">Puzsér Róbert: Orbán Viktor elgyengült, és rájött, hogy hülyékkel van körbevéve – Kultúrtáj</a></h3>
+                    <p>Puzsér Róbert a Magyar Hang „Kultúrtáj” műsorában arról beszélt, hogy Orbán Viktor elbizonytalanodott, és egyre inkább érzékeli, hogy hozzá nem értőkkel van körülvéve. Puzsér szerint Orbán vezetői karizmája megkopott, és a rendszerben a hűség fontosabb lett a szakértelemnél, ami hosszú távon kárt okoz a kormányzásban.</p>
+                    <a href="https://hang.hu/kulturtaj/puzser-robert-orban-viktor-elgyengult-es-rajott-hogy-hulyekkel-van-korbeveve-kulturtaj-168814" target="_blank">Olvasd el a teljes cikket itt!</a>
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="https://assets.telex.hu/images/20241021/1729539498-temp-DOKNLi_hero-normal:xl@1.25x.jpg" alt="Letta: Az Egyesült Államok vagy Kína gyarmata akarunk lenni tíz éven belül?">
+                <div>
+                    <h3><a href="https://telex.hu/gazdasag/2024/10/21/eu-europai-parlament-enrico-letta-jelentes-versenykepesseg" target="_blank">Letta: Az Egyesült Államok vagy Kína gyarmata akarunk lenni tíz éven belül?</a></h3>
+                    <p>Enrico Letta volt olasz miniszterelnök szerint az Európai Uniónak növelnie kell versenyképességét és gazdasági integrációját, különben az USA vagy Kína befolyása alá kerülhet. A jelentésében a belső piac megerősítését, a banki, energetikai és telekommunikációs szektor integrálását sürgette, hogy az EU globálisan erősebbé válhasson. Ezzel párhuzamosan magyar képviselők a túlzott központosítás ellen érveltek, hangsúlyozva a kisebb szereplők védelmét.</p>
+                    <a href="https://telex.hu/gazdasag/2024/10/21/eu-europai-parlament-enrico-letta-jelentes-versenykepesseg" target="_blank">Olvasd el a teljes cikket itt!</a>
+                </div>
+            </div>
+			
+			<div class="article">
+                <img src="https://hang.hu/data/generated/articles/141/1415/article-141559/natanael-melchor-43LwvC-eQPM-unsplash_focuspointscale_w702_fx0_fy0.webp?key=ZmUzY2FhYjg2NWI3MzQ4ZWM3Y2VmYTZjNWUxZjBhNmZjN2U4MDI3OGRkYjA4NjIzOTljZjZjOGM4MjczMjZlMQ==&v=1729240545" alt="26 ezerrel több munkanélküli van az országban, mint egy éve ilyenkor">
+                <div>
+                    <h3><a href="https://24.hu/fn/gazdasag/2024/10/25/ksh-statisztika-munkanelkuliseg-foglalkoztatottak/" target="_blank">26 ezerrel több munkanélküli van az országban, mint egy éve ilyenkor</a></h3>
+                    <p>A KSH 2024 szeptemberi adatai szerint a munkanélküliek száma Magyarországon 26 ezer fővel nőtt az előző évhez képest, így 225 ezerre emelkedett, és a munkanélküliségi ráta 4,6%-ra nőtt. A foglalkoztatottak száma 32 ezer fővel csökkent, ami főként a férfiaknál volt jelentős. Ezen időszakban a munkakeresés átlagos ideje közel 12 hónap volt.</p>
+                    <a href="https://24.hu/fn/gazdasag/2024/10/25/ksh-statisztika-munkanelkuliseg-foglalkoztatottak/" target="_blank">Olvasd el a teljes cikket itt!</a>
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="https://itbusiness.hu/wp-content/uploads/2022/07/177515-mnb.jpg" alt="Úgy néz ki, sokáig bosszankodhat még a kormány a magas kamatok miatt – az MNB megindokolta, miért maradhat velünk a 6,5 százalékos szint">
+                <div>
+                    <h3><a href="https://telex.hu/gazdasag/2024/10/22/mnb-most-ovatossag-es-turelem-kell-huzamosabb-ideig-is-maradhat-a-6-5-szazalekos-kamat" target="_blank">Úgy néz ki, sokáig bosszankodhat még a kormány a magas kamatok miatt – az MNB megindokolta, miért maradhat velünk a 6,5 százalékos szint</a></h3>
+                    <p>Az MNB a jelenlegi 6,5%-os kamatszintet tartja szükségesnek a gazdasági stabilitás megőrzéséhez. A Monetáris Tanács szerint a kockázatok, mint az emelkedő nyersanyagárak, az infláció és a forint gyengülése, további óvatosságot követelnek, ezért hosszabb ideig nem várható kamatcsökkentés. Az infláció enyhítése érdekében fontos az árstabilitás fenntartása, ami a gazdaság fenntartható növekedésének alapja.</p>
+                    <a href="https://telex.hu/gazdasag/2024/10/22/mnb-most-ovatossag-es-turelem-kell-huzamosabb-ideig-is-maradhat-a-6-5-szazalekos-kamat" target="_blank">Olvasd el a teljes cikket itt!</a>
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="https://s.24.hu/app/uploads/2024/10/000_366l9x6-masolat-1140x641.jpg" alt="Eszkaláció, nemzetközi konfliktus – új fejezetet nyit az orosz-ukrán háborúban az észak-koreai katonák megjelenése">
+                <div>
+                    <h3><a href="https://24.hu/kulfold/2024/10/25/orosz-ukran-haboru-eszak-korea-kim-dzsongun-vlagyimir-putyin-katonak/" target="_blank">Eszkaláció, nemzetközi konfliktus – új fejezetet nyit az orosz-ukrán háborúban az észak-koreai katonák megjelenése</a></h3>
+                    <p>Észak-Korea közel 10 000 katonát küldhetett az orosz-ukrán frontvonalra, hogy támogassa az orosz hadsereget az ukrán hadműveletekben. Bár hivatalosan Észak-Korea továbbra is tagadja a katonai jelenlétét, szorosabb együttműködést ápol Oroszországgal, különösen fegyverszállítások terén. Az USA és más nyugati országok egyre komolyabban aggódnak az orosz-észak-koreai kapcsolat mélyülése miatt, mivel azzal Moszkva újabb erőforrásokat nyerhet az elhúzódó háborúhoz.</p>
+                    <a href="https://24.hu/kulfold/2024/10/25/orosz-ukran-haboru-eszak-korea-kim-dzsongun-vlagyimir-putyin-katonak/" target="_blank">Olvasd el a teljes cikket itt!</a>
+                </div>
+            </div>
+			
+			<div class="article">
+                <img src="https://pcdn.hu/articles/images-xl/g/e/t/gettyimages-1419507063-658191.jpg" alt="Nagy változás jön a rezsicsökkentésben, több százezer háztartást érint majd">
+                <div>
+                    <h3><a href="https://www.portfolio.hu/gazdasag/20241021/nagy-valtozas-jon-a-rezsicsokkentesben-tobb-szazezer-haztartast-erint-majd-717805" target="_blank">Nagy változás jön a rezsicsökkentésben, több százezer háztartást érint majd</a></h3>
+                    <p>A kormány változtatásokat tervez a rezsicsökkentésben, amely több százezer magyar háztartást érinthet. Az új szabályozás szerint a nagyobb energiafogyasztók, például társasházak, ahol több ingatlanos tulajdonos él egy helyen, más árazásba kerülhetnek. Ezzel a cél, hogy a magasabb energiafogyasztású háztartások fokozatosan csökkentsék energiafelhasználásukat, míg a kisfogyasztók továbbra is támogatásban részesülhetnek. A részletek kidolgozása folyamatban van, így pontos hatások a jövőben derülnek ki.</p>
+                    <a href="https://www.portfolio.hu/gazdasag/20241021/nagy-valtozas-jon-a-rezsicsokkentesben-tobb-szazezer-haztartast-erint-majd-717805" target="_blank">Olvasd el a teljes cikket itt!</a>
+                </div>
+            </div>
+			
+			<div class="article">
+                <img src="https://hang.hu/data/generated/articles/168/1688/article-168817/1000002244_focuspointscale_w702_fx0_fy0.webp?key=Yzk3YjBhNzhmMTEwNmNjYjJjZGFlYWRiMzA4M2NhNjBmMmE1NDYzYzk2NmFhN2ZmY2YwZTUxMDQ1YjU5ZDFjYQ==&v=1729888328" alt="Hibahatáron belül: eltérően látják az elemzők a közvéleménykutatások eredményeit">
+                <div>
+                    <h3><a href="https://hang.hu/belfold/hibahataron-belul-nem-egyforman-latjak-az-elemzok-a-kozvelemenykutatasok-eredmenyeit-168879" target="_blank">Hibahatáron belül: eltérően látják az elemzők a közvéleménykutatások eredményeit</a></h3>
+                    <p>A közvéleménykutatások eredményeit eltérően értelmezik az elemzők, mivel a hibahatáron belüli eltérések miatt nem mindenki látja ugyanúgy a politikai tájat. A közvélemény alakulására hatással van a gazdasági helyzet és a szociális problémák is.</p>
+                    <a href="https://hang.hu/belfold/hibahataron-belul-nem-egyforman-latjak-az-elemzok-a-kozvelemenykutatasok-eredmenyeit-168879" target="_blank">Olvasd el a teljes cikket itt!</a>
+                </div>
+            </div>
+			
+			<div class="article">
+                <img src="data:image/jpeg;base64,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" alt="Tízmilliárdokért vásárolhat irodaházat Bukarestben Tiborcz István román sajtóértesülések szerint ">
+                <div>
+                    <h3><a href="https://telex.hu/gazdasag/2024/10/24/romania-bukarest-tiborcz-istvan-orban-viktor-irodahaz-vasarlas" target="_blank">Tízmilliárdokért vásárolhat irodaházat Bukarestben Tiborcz István román sajtóértesülések szerint </a></h3>
+                    <p>Tiborcz István, Orbán Viktor veje, 40-50 millió euróért (16-20 milliárd forint) vásárolhat egy irodaházat Bukarestben, az Equilibrium 1-et. A vásárlás az ingatlanpiaci érdeklődésének növelését jelzi, és a svéd Skanska ingatlanfejlesztővel zajló tárgyalások végső szakaszba érkeztek. Az irodaház 20 700 négyzetméter alapterületű, és a román főváros északi részén található.</p>
+                    <a href="https://telex.hu/gazdasag/2024/10/24/romania-bukarest-tiborcz-istvan-orban-viktor-irodahaz-vasarlas" target="_blank">Olvasd el a teljes cikket itt!</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section">
+            <h2>Ajánlott Videók</h2>            
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/4fD_GyZwb8c" frameborder="0" allowfullscreen></iframe>                
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/v8zO7PM8lNk" frameborder="0" allowfullscreen></iframe>                
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/ytcVMcQVxA8" frameborder="0" allowfullscreen></iframe>     
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/z46mwqo5hjU" frameborder="0" allowfullscreen></iframe>                
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/-weT6RKVKas" frameborder="0" allowfullscreen></iframe>                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Víztorony - Tisza Sziget - Oroszlány</p>
+    </footer>
+
+</body>
+</html>
+
